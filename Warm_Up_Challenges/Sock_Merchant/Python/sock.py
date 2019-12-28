@@ -15,3 +15,17 @@ def sockMerchant(n, ar):
         result = sockMerchant(n, ar)
         fptr.write(str(result) + '\n')
         fptr.close()
+
+
+collection = [1, 1, 2, 3, 2, 4, 4, 1, 3]
+
+
+def func():
+    pairs = 0
+    totalsingles = len(collection)
+    print(totalsingles)
+    for sock in collection:
+        print(sock)
+
+
+func()
