@@ -29,6 +29,8 @@ def func():
         print(sock)
         bucket.append(sock)
         print(bucket)
+        dups = [sock for sock in collection if collection.count(sock) > 1]
+        print("These are the dups: " + str(dups))
 
 
 func()
