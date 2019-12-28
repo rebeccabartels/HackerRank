@@ -18,21 +18,13 @@ def sockMerchant(n, ar):
         return n
 
 
-collection = [1, 4, 2, 1, 2, 7, 8, 1, 3, 7, 9]
+input()
+socks = input().strip().split()
+pairs = 0
+
+for element in set(socks):
+    pairs += socks.count(element) // 2
+print(pairs)
 
 
-def Repeat(x):
-    size = len(x)
-    repeated = []
-    for i in range(size):
-        k = i + 1
-        for j in range(k, size):
-            if x[i] == x[j] and x[i] not in repeated:
-                repeated.append(x[i])
-    return repeated
-
-
-# Driver Code
-list1 = [10, 20, 30, 20, 20, 30, 40,
-         50, -20, 60, 60, -20, -20]
-print(Repeat(collection))
+# print(Repeat(collection))
