@@ -24,8 +24,11 @@ def func():
     pairs = 0
     totalsingles = len(collection)
     print(totalsingles)
+    bucket = []
     for sock in collection:
         print(sock)
+        bucket.append(sock)
+        print(bucket)
 
 
 func()
