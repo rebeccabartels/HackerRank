@@ -15,22 +15,24 @@ def sockMerchant(n, ar):
         result = sockMerchant(n, ar)
         fptr.write(str(result) + '\n')
         fptr.close()
+        return n
 
 
-collection = [1, 1, 2, 3, 2, 4, 4, 1, 3]
+collection = [1, 4, 2, 1, 2, 7, 8, 1, 3, 7, 9]
 
 
-def func():
-    pairs = 0
-    totalsingles = len(collection)
-    print(totalsingles)
-    bucket = []
-    for sock in collection:
-        print(sock)
-        bucket.append(sock)
-        print(bucket)
-        dups = [sock for sock in collection if collection.count(sock) > 1]
-        print("These are the dups: " + str(dups))
+def Repeat(x):
+    size = len(x)
+    repeated = []
+    for i in range(size):
+        k = i + 1
+        for j in range(k, size):
+            if x[i] == x[j] and x[i] not in repeated:
+                repeated.append(x[i])
+    return repeated
 
 
-func()
+# Driver Code
+list1 = [10, 20, 30, 20, 20, 30, 40,
+         50, -20, 60, 60, -20, -20]
+print(Repeat(collection))
